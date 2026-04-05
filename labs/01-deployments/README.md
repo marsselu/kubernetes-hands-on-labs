@@ -84,3 +84,14 @@ kubectl delete pod -l app=nginx
 ## Nível de aplicação
 
 Esse padrão é utilizado em ambientes de produção para garantir alta disponibilidade e resiliência de aplicações.
+
+
+## Troubleshooting básico
+
+### Ver eventos do Pod
+
+```bash
+kubectl describe pod <pod-name>
+
+
+
