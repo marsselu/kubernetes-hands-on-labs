@@ -78,3 +78,66 @@ helm upgrade nginx-release ./nginx-chart
 ## Conclusão
 
 Helm é amplamente utilizado em ambientes produtivos para gerenciamento e padronização de aplicações Kubernetes.
+
+
+## EXTRA
+
+# Helm vs kubectl apply
+
+## Diferença real
+
+### kubectl apply
+
+Aplica arquivos YAML diretamente no cluster.
+
+* Simples e direto
+* Usa manifests estáticos
+* Sem parametrização nativa
+* Difícil de reutilizar em larga escala
+
+---
+
+### Helm
+
+Gerencia aplicações como pacotes (charts).
+
+* Usa templates dinâmicos
+* Permite reutilização
+* Possui versionamento
+* Facilita upgrades e rollbacks
+* Padroniza deploys
+
+---
+
+## Explicação objetiva
+
+O `kubectl apply` aplica manifests estáticos diretamente no cluster.
+
+O Helm adiciona uma camada de abstração, permitindo parametrização, reutilização e versionamento dos manifests, facilitando o gerenciamento de aplicações em ambientes complexos e produtivos.
+
+---
+
+## Insight importante
+
+Helm não substitui o kubectl.
+
+Ele utiliza o Kubernetes por baixo (API), funcionando como uma camada superior de gerenciamento.
+
+---
+
+## Quando usar cada um
+
+| Cenário                   | Ferramenta |
+| ------------------------- | ---------- |
+| Teste rápido              | kubectl    |
+| Deploy simples            | kubectl    |
+| Produção escalável        | Helm       |
+| Padronização de ambientes | Helm       |
+
+---
+
+## Conclusão
+
+O kubectl é essencial para operações diretas e simples.
+
+O Helm é fundamental para ambientes produtivos onde há necessidade de organização, padronização e escalabilidade.
