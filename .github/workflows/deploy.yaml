@@ -1,0 +1,29 @@
+name: Deploy to kind
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check kubectl
+        run: kubectl version --client
+
+      - name: Check cluster
+        run: kubectl get nodes
+
+      - name: Apply manifests
+        run: kubectl apply -f manifests/
+
+      - name: Verify resources
+        run: |
+          kubectl get deployments
+          kubectl get services
+          kubectl get pods
