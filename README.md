@@ -1,18 +1,18 @@
 # Kubernetes Hands-On Labs
 
-## 📌 Sobre o projeto
+## 📌 About the Project
 
-Este repositório reúne uma série de laboratórios práticos focados em Kubernetes, cobrindo desde conceitos fundamentais até cenários mais avançados utilizados em ambientes de produção.
+This repository contains a collection of hands-on Kubernetes labs, covering topics from fundamental concepts to advanced production-like scenarios.
 
-O objetivo é demonstrar, de forma prática, a criação, operação e troubleshooting de aplicações containerizadas em Kubernetes, incluindo automação de deploy e GitOps.
+The goal is to demonstrate practical experience in deploying, operating, and troubleshooting containerized applications in Kubernetes, including automation with CI/CD and GitOps.
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## 🚀 Technologies Used
 
 * Kubernetes (kind)
 * Docker
-* Helm (básico e avançado)
+* Helm (basic and advanced)
 * Prometheus
 * Grafana
 * Loki
@@ -22,69 +22,68 @@ O objetivo é demonstrar, de forma prática, a criação, operação e troublesh
 
 ---
 
-## 📚 Labs incluídos
+## 📚 Labs Included
 
-### 🔹 Fundamentos
+### 🔹 Core Concepts
 
 * Deployments
 * Services
 * ConfigMaps
 * Secrets
 
-### 🔹 Segurança
+### 🔹 Security
 
 * RBAC (Role-Based Access Control)
 * NetworkPolicy
 
-### 🔹 Observabilidade
+### 🔹 Observability
 
 * Prometheus
 * Grafana
 * Loki
 
-### 🔹 Escalabilidade
+### 🔹 Scalability
 
 * HPA (Horizontal Pod Autoscaler)
 
-### 🔹 Rede
+### 🔹 Networking
 
-* Ingress com Traefik
+* Ingress with Traefik
 
-### 🔹 Persistência
+### 🔹 Storage
 
 * PVC / StorageClass
 * StatefulSet
 
-### 🔹 Empacotamento e Deploy
+### 🔹 Packaging & Deployment
 
-* Helm (básico e avançado)
+* Helm (basic and advanced)
 
-### 🔹 Automação
+### 🔹 Automation
 
-* CI/CD com GitHub Actions
-* GitOps com ArgoCD
-
----
-
-## 🧠 Conceitos abordados
-
-* Orquestração de containers
-* Service discovery
-* Observabilidade e logs
-* Segurança de rede e controle de acesso (RBAC)
-* Escalonamento automático
-* Persistência de dados
-* Gerenciamento de pacotes com Helm
-* Deploy contínuo
-* GitOps
+* CI/CD with GitHub Actions
+* GitOps with ArgoCD
 
 ---
 
-## 🏗️ Arquitetura geral
+## 🔑 Key Skills Demonstrated
+
+* Kubernetes cluster management
+* Application deployment and scaling
+* Observability and logging
+* Networking and service discovery
+* Security (RBAC, NetworkPolicy)
+* Persistent storage management
+* CI/CD pipeline implementation
+* GitOps workflows with ArgoCD
+
+---
+
+## 🏗️ Architecture Overview
 
 ```mermaid
 flowchart LR
-    Dev[Developer] -->|git push| Git[GitHub Repo]
+    Dev[Developer] -->|git push| Git[GitHub Repository]
 
     Git -->|CI/CD| Actions[GitHub Actions]
     Actions -->|kubectl apply| Cluster[Kubernetes Cluster]
@@ -105,63 +104,62 @@ flowchart LR
 
 ---
 
-## 🎯 Objetivo
+## 🎯 Purpose
 
-Este projeto tem como foco:
+This project aims to:
 
-* Consolidar conhecimentos práticos em Kubernetes
-* Simular cenários reais de produção
-* Demonstrar capacidade de troubleshooting
-* Servir como portfólio técnico
-
----
-
-## 📈 Diferenciais
-
-* Abordagem prática (hands-on)
-* Troubleshooting real documentado
-* Uso de ferramentas modernas (GitOps, Observabilidade)
-* Pipeline completo: desenvolvimento → deploy → operação
-* Cobertura de temas avançados como Helm e RBAC
+* Build practical Kubernetes skills
+* Simulate real-world production scenarios
+* Demonstrate troubleshooting capabilities
+* Serve as a technical portfolio
 
 ---
 
-## ▶️ Como usar
+## 📈 Highlights
 
-1. Clonar o repositório:
+* Hands-on approach (not just theory)
+* Real troubleshooting scenarios documented
+* Modern stack (GitOps, Observability, CI/CD)
+* End-to-end pipeline: development → deployment → operations
+* Coverage of advanced topics like Helm and RBAC
+
+---
+
+## ▶️ How to Use
+
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/marsselu/kubernetes-hands-on-labs.git
 cd kubernetes-hands-on-labs
 ```
 
-2. Navegar pelos labs:
+2. Navigate to a lab:
 
 ```bash
-cd labs/<nome-do-lab>
+cd labs/<lab-name>
 ```
 
-3. Seguir o README de cada lab
+3. Follow the instructions in each lab README
 
 ---
 
-## 📌 Observações
+## 📌 Notes
 
-* Ambiente baseado em **kind (cluster local)**
-* Alguns comportamentos podem variar em cloud providers
-* Labs focados em aprendizado progressivo
+* Environment based on **kind (local Kubernetes cluster)**
+* Some behaviors may differ in cloud environments
+* Labs are designed for progressive learning
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 Marcelo Santos
 
 ---
 
-## 📎 Conclusão
+## 📎 Conclusion
 
-Este repositório demonstra a construção de um ambiente Kubernetes completo, desde a criação de workloads até automação com CI/CD e GitOps, refletindo práticas utilizadas em ambientes reais de produção.
+This repository demonstrates a complete Kubernetes workflow, from deploying applications to implementing CI/CD and GitOps practices, reflecting real-world production environments.
 
 ---
-
