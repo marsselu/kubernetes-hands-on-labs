@@ -15,6 +15,12 @@
 ✔ Logs (ELK / Loki)
 ✔ NetworkPolicy (segurança de rede)
 ✔ Autoscaling
+✔ Cluster
+✔ Workloads 
+✔ Segurança 
+✔ Storage 
+✔ Stateful 
+✔ CI/CD integrado
 
 
 
