@@ -21,6 +21,7 @@
 ✔ Storage 
 ✔ Stateful 
 ✔ CI/CD integrado
+✔ GitOps
 
 
 
